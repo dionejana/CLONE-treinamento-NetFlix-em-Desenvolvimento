@@ -1,0 +1,148 @@
+:root{
+    --vermelho:#e91616;
+    --preto:#141414;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .containner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .logo{
+    color:var(--vermelho);
+    font-family: 'arial black', times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #ffff;
+}
+
+/** firme principal **/
+
+.firme-principal{
+    font-size: 16px;
+background:linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(../image/gotham-fundo.jpg);
+height: 480px;
+background-size: cover;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+
+
+
+
+}
+
+.firme-principal .descricao{
+    margin-bottom: 90px;
+    opacity: 0.6;
+    margin-top: 10px;
+}
+.titulo{
+    margin-top: 10%;
+   font-size: 40px; 
+   opacity: 0.6;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: .3s ease all;
+
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+    
+}
+.botao i{
+    margin-right: 6px;
+}
+.containner{margin-left: 30px;}
+.firme-principal .containner{
+    width: 70%;
+}
+
+.box-firmes{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+    header .containner{
+        display: flex;
+        flex-direction: column;
+    }
+    .botao{
+        margin-top: 5px;
+        width: 150px;
+        height: 60px;
+    }
+
+    
+}
+@media screen and (min-width:1000px){
+    .descricao{
+        width: 50%;
+    }
+}
+.carrosel-firmes{
+    margin-top: 5px;
+}
+
+.secao{
+    color: white;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}.box-firmes:hover{
+    border:solid 3px white;
+    width: 900px;
+}
+
+img:hover{
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+ }
